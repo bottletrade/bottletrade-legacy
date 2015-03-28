@@ -1,0 +1,51 @@
+.image-cropper-container {
+	margin-left:auto;
+	margin-right:auto;
+	clear: both;
+}
+
+img.image-cropper {
+	display: block;
+	overflow: visible;
+	margin-left:auto;
+	margin-right:auto;
+	clear: both;
+}
+
+.image-crop-button-table {
+	clear: both;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.image-crop-popup-main-container {
+	display: block;
+	overflow: visible;
+	position: relative; 
+	height: auto;
+	padding: 10px; 
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(../images/main_background.jpg);
+	background-repeat: repeat-y;
+}
+
+.image-crop-button-table button {
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+
+button.image-action-rotate-left {
+	background-image: url(../images/crop/BT_ROTATE_LEFT_ARROW.png);
+	float: left;
+}
+
+button.image-action-rotate-right {
+	background-image: url(../images/crop/BT_ROTATE_RIGHT_ARROW.png); 
+	float: right;
+}
+
+/* Mobile support */
+.image-crop-button-table.mobile button.large {
+	font-size: 30px;
+}

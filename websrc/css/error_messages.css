@@ -1,0 +1,11 @@
+.errorMessage {
+	width: auto;
+	clear: both;
+	position: relative;
+	text-align: left;
+	!important font-family: main !important;
+	font-size: 12px;
+	color: red !important;
+	letter-spacing: 1px;
+	padding: 2px 0px;
+}

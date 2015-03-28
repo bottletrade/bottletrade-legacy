@@ -1,0 +1,74 @@
+ul.ui-autocomplete {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	border-radius:10px;
+}
+
+input, textarea, select {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	border-radius:3px;
+}
+
+div, a, button, span, iframe, table, img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	border-radius:3px;
+}
+
+tr td:first-child {
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+tr td:last-child {
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* no rounded corners on bottom */
+.search-tab, .trade-feed-shortcut-list, .bottle-display {
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+
+#menu, #header, .left-banner-holder a button {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+	border-radius:0px;
+}
+
+/* no rounded corners on top */
+.rotating-banner, .user_menu {
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}
+
+.rotating-banner #slider #mask ul li a img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	border-radius:3px;
+	
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}

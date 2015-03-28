@@ -1,0 +1,31 @@
+ul.search-criteria {
+	width: 100%;
+}
+
+ul.search-criteria li.search-criteria-header {
+	position: relative;
+	width: 140px;
+}
+
+ul.search-criteria-list {
+	position: relative;
+	left: -40px;
+	list-style: none;
+	width: 100%;
+}
+
+ul.search-criteria-list li {
+	list-style: none;
+}
+
+ul.search-criteria-list li.search-type-header {
+	margin-top: 10px;
+}
+
+li.search-critera-header {
+	font-weight: bold;
+}
+
+span.search-result-count {
+	font-weight: bold;
+}

@@ -1,0 +1,58 @@
+body {background-image: url(../images/main_background.jpg); background-repeat: repeat-y;}
+
+a:link {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+a:visited {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+a:hover {font-family:main-font; color:#000000; text-decoration:underline; size: 10px;}
+a:active {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+
+@font-face {font-family: main-font;
+
+src: url('../fonts/Gotham-Book.otf')
+
+	,url('../fonts/Gotham-Bold.eot');}
+	
+@font-face {font-family: button_font;
+
+src: url('../fonts/Gotham-Bold.otf')
+
+	,url('../fonts/Gotham-Bold.eot')}
+	
+@font-face {font-family: title;
+
+src: url('../fonts/Press Style.ttf')
+
+	,url('../fonts/Press_Style.eot');}
+	
+.black {font-family: main-font, Fallback, sans-serif; font-size: 14px; text-align:justify; color: #000; text-shadow: none;}
+.white {font-family: main-font, Fallback, sans-serif; font-size: 14px; text-align: justify; color: #FFF; text-shadow: none;}
+	
+.white-title {font-family: title, Fallback, sans-serif; line-height: 100%; font-size: 16px; letter-spacing: 2px; color: #FFF; text-shadow: 3px 3px 3px #000; margin-top: 10px;}
+.large {font-size: 20px;}
+
+#header {border-bottom: 1px solid #000; position: relative; width:100%; padding-top: 12px; background-image: url(../images/top_bottles.jpg); text-align: center;}
+#footer {clear: both; position: relative; width: 950px; height: 15px; margin: 50px auto; text-align: center; top: 10px;}
+
+.top-bar-section ul li a:link, visited, active {font-family: button_font; font-size: 18px; text-decoration:none; color: #FFF;}
+.top-bar-section ul li a:hover {font-family: button_font; font-size: 18px; text-decoration:none; color: #F6FF81;}
+.top-bar-section ul li a:visited:hover {font-family: button_font; font-size: 18px; text-decoration:none; color: #F6FF81;}
+.top-bar-section ul li a:link:hover {font-family: button_font; font-size: 18px; text-decoration:none; color: #F6FF81;}
+.top-bar-section ul li a:active:hover {font-family: button_font; font-size: 18px; text-decoration:none; color: #F6FF81;}
+
+.pricing-table .price {font-family: button_font; font-size: 4rem;}
+.pricing-table .title {font-family: title; font-size: 2rem;}
+
+
+.off-canvas-wrap, .inner-wrap {
+min-height: 100%;
+}
+.off-canvas-wrap{  
+height: 100%;
+overflow-y: auto;
+}
+
+/* ADMIN PANEL */
+
+.admin-stats-holder {width: 100%; height: auto; display: block; overflow: auto;  border: 2px solid #000; padding: 10px 5px; margin-bottom: 10px;}
+.admin-user-stats {width: 150px; float: left; height: auto; margin: 5px 19px; text-align: center; padding: 0px 0px 5px 0px; border: 1px solid #000;}
+.admin-title-holder {width: 100%; background-color: #000; padding: 5px 0px; text-align: center; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;}
+.admin-links-holder {width: 33%; height: auto; display: block; overflow: auto; text-align: center; border: 2px solid #000; padding: 10px 5px; margin-bottom: 10px;}

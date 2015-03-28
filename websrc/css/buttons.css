@@ -1,0 +1,268 @@
+/* HOME PAGE */
+
+button.home-hor-1 {
+	cursor: pointer;
+	width: 614px; 
+	height: 197px;
+	background-image: url(../images/home/hor_1_up.jpg);}
+button.home-hor-1:hover {
+	background-image: url(../images/home/hor_1_over.jpg);}
+	
+button.home-hor-2 {
+	cursor: pointer;
+	width: 614px; 
+	height: 197px;
+	background-image: url(../images/home/hor_2_up.jpg);}
+button.home-hor-2:hover {
+	background-image: url(../images/home/hor_2_over.jpg);}
+	
+button.home-hor-3 {
+	cursor: pointer;
+	width: 614px; 
+	height: 197px;
+	background-image: url(../images/home/hor_3_up.jpg);}
+button.home-hor-3:hover {
+	background-image: url(../images/home/hor_3_over.jpg);}
+	
+button.house-rules {
+	cursor: pointer;
+	width: 289px; 
+	height: 122px;
+	background-image: url(../images/home/house_rules_up.jpg);}
+button.house-rules:hover {
+	background-image: url(../images/home/house_rules_over.jpg);}
+
+
+/* SEARCH */
+
+.search-tab {background-color: none; cursor: pointer; width: 120px; height: 24px; border-top: 1px solid #000; border-left: 1px solid #000; text-align: center; padding-top: 5px; float: left;}
+.search-tab:hover {background-color: #C6AB90;}
+
+.search-tab:last-child {background-color: none; cursor: pointer; width: 120px; height: 24px; border-top: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; text-align: center; padding-top: 5px; float: left;}
+.search-tab:last-child:hover {background-color: #C6AB90;}
+
+.search-tab-selected {background-color: #C6AB90; cursor: arrow; width: 120px; height: 24px; border-top: 1px solid #000; border-left: 1px solid #000; text-align: center; padding-top: 5px; float: left;}
+
+#tab-holder {width: 630px; height: 30px; margin: 0px auto 0px auto;}
+
+
+/* STORE */
+
+button.apparel {
+	cursor: pointer;
+	width: 300px; 
+	height: 300px; 
+	background-image: url(../images/store/apparel.jpg);}
+button.apparel:hover{
+	background-image: url(../images/store/apparel_over.jpg);}
+
+button.glassware {
+	cursor: pointer;
+	width: 300px; 
+	height: 300px; 
+	background-image: url(../images/store/glassware.jpg);}
+button.glassware:hover {
+	background-image: url(../images/store/glassware_over.jpg);}
+
+button.art {
+	cursor: pointer;
+	width: 300px; 
+	height: 300px; 
+	background-image: url(../images/store/art.jpg);}
+button.art:hover {
+	background-image: url(../images/store/art_over.jpg);}
+
+
+/* EDUCATE PAGE */
+
+
+button.main {
+	cursor: pointer;
+	width: 950px; 
+	height: 456px; 
+	background-image: url(../images/educate/main_up.jpg);}
+button.main:hover {
+	background-image: url(../images/educate/main_over.jpg);}
+
+button.r1_c1 {
+	cursor: pointer;
+	width: 294px; 
+	height: 324px; 
+	background-image: url(../images/educate/r1_c1_up.jpg);}
+button.r1_c1:hover {
+	background-image: url(../images/educate/r1_c1_over.jpg);}
+	
+button.r1_c2 {
+	cursor: pointer;
+	width: 294px; 
+	height: 324px; 
+	background-image: url(../images/educate/r1_c2_up.jpg);}
+button.r1_c2:hover {
+	background-image: url(../images/educate/r1_c2_over.jpg);}
+	
+button.r1_c3 {
+	cursor: pointer;
+	width: 294px; 
+	height: 324px; 
+	background-image: url(../images/educate/r1_c3_up.jpg);}
+button.r1_c3:hover {
+	background-image: url(../images/educate/r1_c3_over.jpg);}
+	
+button.r2_c1 {
+	cursor: pointer;
+	width: 464px; 
+	height: 226px; 
+	background-image: url(../images/educate/r2_c1_up.jpg);}
+button.r2_c1:hover { 
+	background-image: url(../images/educate/r2_c1_over.jpg);}
+	
+button.r2_c2 {
+	cursor: pointer;
+	width: 464px; 
+	height: 226px; 
+	background-image: url(../images/educate/r2_c2_up.jpg);}
+button.r2_c2:hover {
+	background-image: url(../images/educate/r2_c2_over.jpg);}
+
+
+/* PROPOSE TRADE */
+
+button.plus {
+	cursor: pointer;
+	width: 20px; 
+	height: 20px;
+	box-shadow: 0px 2px 4px #000000;
+	background-image: url(../images/propose_trade/plus-up.png);}
+button.plus:hover {
+	box-shadow: 0px 0px 0px #000000;}
+	
+button.minus {
+	cursor: pointer;
+	width: 20px; 
+	height: 20px;
+	box-shadow: 0px 2px 4px #000000;
+	background-image: url(../images/propose_trade/minus-up.png);}
+button.minus:hover {
+	box-shadow: 0px 0px 0px #000000;}
+
+
+/* KNOW YOUR BREWS BUTTONS */
+
+button.what_is_craft {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r1_c1.jpg);}
+button.what_is_craft:hover {
+	background-image: url(../images/educate/know_ur_brews/r1_c1_over.jpg);}
+	
+button.dist_laws {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r1_c2.jpg);}
+button.dist_laws:hover {
+	background-image: url(../images/educate/know_ur_brews/r1_c2_over.jpg);}
+	
+button.beer_styles {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r1_c3.jpg);}
+button.beer_styles:hover {
+	background-image: url(../images/educate/know_ur_brews/r1_c3_over.jpg);}
+	
+button.brew_in_numbers {
+	cursor: pointer;
+	width: 380px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r2_c1.jpg);}
+button.brew_in_numbers:hover {
+	background-image: url(../images/educate/know_ur_brews/r2_c1_over.jpg);}
+	
+button.rise_of_craft {
+	cursor: pointer;
+	width: 380px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r2_c2.jpg);}
+button.rise_of_craft:hover {
+	background-image: url(../images/educate/know_ur_brews/r2_c2_over.jpg);}
+	
+button.beer_flavor {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r3_c1.jpg);}
+button.beer_flavor:hover {
+	background-image: url(../images/educate/know_ur_brews/r3_c1_over.jpg);}
+	
+button.twenty_things {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r3_c2.jpg);}
+button.twenty_things:hover {
+	background-image: url(../images/educate/know_ur_brews/r3_c2_over.jpg);}
+	
+button.varieties_of_beer {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r3_c3.jpg);}
+button.varieties_of_beer:hover {
+	background-image: url(../images/educate/know_ur_brews/r3_c3_over.jpg);}
+	
+button.case_for_beer {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r4_c1.jpg);}
+button.case_for_beer:hover {
+	background-image: url(../images/educate/know_ur_brews/r4_c1_over.jpg);}
+	
+button.making_beer {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r4_c2.jpg);}
+button.making_beer:hover {
+	background-image: url(../images/educate/know_ur_brews/r4_c2_over.jpg);}
+	
+button.brewing_facts {
+	cursor: pointer;
+	width: 250px; 
+	height: 250px;
+	background-image: url(../images/educate/know_ur_brews/r4_c3.jpg);}
+button.brewing_facts:hover {
+	background-image: url(../images/educate/know_ur_brews/r4_c3_over.jpg);}
+
+	
+.HN {
+	clear: both;
+	position: relative;
+	width: 22px;
+	height: 17px;
+	margin: 0px;
+	padding: 4px 0px 0px 0px;
+	z-index: 25;
+	background-color: red;
+	-moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+	border-radius: 11px;
+	box-shadow: 2px 1px 1px #453B35;
+	font-family: main-font;
+	font-size: 12px;
+	text-align: center;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.single-high {top: -32px; left: 106px;}
+.double-high {top: -45px; left: 106px;}
+.ICC-single-high {top: -33px; left: 119px;}
+.ICC-double-high {top: -47px; left: 119px;}
+
+
+
+
+	

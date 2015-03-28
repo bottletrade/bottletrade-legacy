@@ -1,0 +1,660 @@
+/*Nick Jacalone and Brian Soumakian
+Copyright 2014
+Written for  - www.bottletrade.com and BottleTrade. LLC  
+
+*/
+
+
+body {height: auto; background-image: url(../images/main_background.jpg); background-repeat: repeat-y;}
+
+a:link {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+a:visited {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+a:hover {font-family:main-font; color:#000000; text-decoration:underline; size: 10px;}
+a:active {font-family:main-font; color:#000000; text-decoration: none; size: 10px;}
+
+a:link.white {font-family:main-font; color:#FFF; text-decoration: underline; size: 10px;}
+a:visited.white {font-family:main-font; color:#FFF; text-decoration: underline; size: 10px;}
+a:hover.white {font-family:main-font; color:#FFF; text-decoration:underline; size: 10px;}
+a:active.white {font-family:main-font; color:#FFF; text-decoration: underline; size: 10px;}
+
+a:link.underline {font-family:main-font; color:#000000; text-decoration: underline; size: 10px;}
+a:visited.underline {font-family:main-font; color:#000000; text-decoration: underline; size: 10px;}
+a:hover.underline {font-family:main-font; color:#000000; text-decoration:underline; size: 10px;}
+a:active.underline {font-family:main-font; color:#000000; text-decoration: underline; size: 10px;}
+
+a:link.add {font-family:main-font; color:#FF0000; text-decoration: underline; size: 11px;}
+a:visited.add {font-family:main-font; color:#FF0000; text-decoration: underline; size: 11px;}
+a:hover.add {font-family:main-font; color:#FF0000; text-decoration:underline; size: 11px;}
+a:active.add {font-family:main-font; color:#FF0000; text-decoration: underline; size: 11px;}
+
+a:link.terms {font-family:login; color:#000000; text-decoration: underline; size: 16px;}
+a:visited.terms {font-family:login; color:#000000; text-decoration: underline; size: 16px;}
+a:hover.terms {font-family:login; color:#000000; text-decoration:underline; size: 16px;}
+a:active.terms {font-family:login; color:#000000; text-decoration: underline; size: 16px;}
+
+a:link.title {font-family: title; font-size: 450%; line-height: 80%; letter-spacing:2px; color: #FFF; text-decoration: none; text-shadow: 3px 3px 3px #000;}
+a:visited.title {font-family: title; font-size: 450%; line-height: 80%; letter-spacing:2px; color: #FFF; text-decoration: none; text-shadow: 3px 3px 3px #000;}
+a:hover.title {font-family: title; font-size: 450%; line-height: 80%; letter-spacing:2px; color: #FFF; text-decoration: none; text-shadow: 3px 3px 3px #000;}
+a:active.title {font-family: title; font-size: 450%; line-height: 80%; letter-spacing:2px; color: #FFF; text-decoration: none; text-shadow: 3px 3px 3px #000;}
+
+@font-face {font-family: title;
+src: url('../fonts/Press Style.ttf')
+	,url('../fonts/Press_Style.eot');}
+
+@font-face {font-family: button_font;
+src: url('../fonts/Gotham-Bold.otf')
+	,url('../fonts/Gotham-Bold.eot')}
+
+@font-face {font-family: main-font;
+src: url('../fonts/Gotham-Book.otf')
+	,url('../fonts/Gotham-Bold.eot');}
+	
+@font-face {font-family: login;
+src: url('../fonts/LeagueGothic-Regular.otf')
+    ,url('../fonts/LeagueGothic-Regular.eot');}
+
+.white {font-family: main-font, Fallback, sans-serif; font-size: 14px; text-align: justify; color: #FFF; text-shadow: none;}
+.white-title {font-family: title, Fallback, sans-serif; line-height: 80%; letter-spacing: 2px; color: #FFF; text-shadow: 3px 3px 3px #000;}
+.white-title-profile {font-family: title, Fallback, sans-serif; letter-spacing: 2px; color: #FFF; text-shadow: 3px 3px 3px #000;}
+.ti-large {font-size: 750%;}
+.ti-medium {font-size: 450%;}
+.ti-small {font-size: 250%;}
+.ti-mini {font-size: 200%;}
+
+p {font-family: main-font, Fallback, sans-serif; font-size: 16px; text-align:justify; color: #000;}
+
+.black {font-family: main-font, Fallback, sans-serif; font-size: 14px; text-align:justify; color: #000; text-shadow: none;}
+.black-mini {font-family: main-font, Fallback, sans-serif; font-size: 10px; color: #000; text-shadow: none;}
+.black-small {font-family: main-font, Fallback, sans-serif; font-size: 12px; color: #000; text-shadow: none;}
+.black-medium {font-family: main-font, Fallback, sans-serif; font-size: 16px; color: #000; text-shadow: none;}
+.black-large {font-family: main-font, Fallback, sans-serif; font-size: 20px; color: #000; text-shadow: none;}
+.bold {font-weight: 700;}
+.center {width: auto; height: auto; margin: 0px auto;}
+button.center { 
+	display: block;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	clear: both; 
+}
+.medium {font-size: 16px;}
+.large {font-size: 20px;}
+.black-underline {font-family: main-font; font-size: 14px; color: #000; text-shadow: none; text-decoration: underline;}
+
+.username {font-family: main-font; font-size: 135%; color: #FFF; text-transform: uppercase;}
+.city-state {font-family: main-font; font-size: 85%; color: #FFF; line-height: 100%;}
+
+.trade_list, .bottle_title {font-family: main-font; font-weight: bold; font-size: 100%; color: #000; text-transform: uppercase;}
+.logo {margin-top: 10px;}
+.link {font-family:main-font; size: 12px;}
+.center {text-align: center; padding: 0px; margin: 0px;}
+
+table.contact-input {font-family: login; font-size: 14pt; margin-top: 15px;}
+.contact-input tr td:first-child {text-align: right; vertical-align: top;}
+.contact-input select {width: 154px; height: 26px;}
+.contact-input textarea {width: 600px; max-width: 600px; max-height: 250px; height: 150px;}
+
+.text_field_prompt {font-family: login; text-align: right; list-style: none; font-size: 14pt;}
+
+#body_holder {width: 105%; height: 100%; background-image: url(../images/main_background.jpg); background-repeat:no-repeat; margin-right:auto; margin-left:auto; text-align:center;}
+#main_container {clear: both; position: relative; width: 950px; height: auto; top: 10px; margin-bottom: 10px;}
+#container {width:950px; height: auto; margin-right:auto; margin-left:auto; margin-top: 189px;}
+#header {position: absolute; top: 0px; left: 0px; width:100%; height:129px; padding-top: 15px; background-image: url(../images/top_bottles.jpg); text-align: center;}
+#menu {position: absolute; top: 144px; left: 0px; width:100%; height: 45px; background-image: url(../images/buttons/blank.jpg);}
+
+#footer {clear: both; position: relative; width: 950px; height: 15px; margin: 10px auto; text-align: center; top: 10px;}
+.mfp-close {display: none !important;}
+#message-text textarea {width: 550px; height: 300px;} 
+
+#under-c {width: 101%; height: 101%; text-align: center; background-image: url(../images/main_background.jpg);}
+#social-holder {position: relative; margin: 10px auto 0px auto; text-align: center; width: 300px; height: 50px;}
+.social {margin: 7px 0px 0px -3px;}
+
+.ui-menu {font-family: main-font; font-size: 14px; text-align: justify; color: #000; text-shadow: none; border: 1px solid #000; box-shadow: 4px 4px 10px #000;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {border: 1px solid #FFF; background: none;}
+.ui-corner-all {border-radius: 0px;}
+.ui-datepicker-month, .ui-datepicker-year {
+	padding: 0px;
+	height: 26px;}
+.hasDatepicker, table.text-field-prompt-bottle-input tbody tr td textarea {
+	width: 148px;
+	height: 26px;}
+
+#left_container {width: 612px; height:auto; float:left;}
+.left-banner-holder {clear: both; width: 612px; height:195px; text-align:center; margin-top: 22px; box-shadow: 5px 5px 3px #453B35;}
+#left_text_holder {clear: both; width: 612px; height: 115px; text-align: center; margin-top: 0px;}
+#right_container {width: 331px; height:auto; float:right; text-align:center;}
+.right_banner_holder {width: 287px; height:auto; text-align:center;  margin-top: 5px; margin-right:auto; margin-left:auto;}
+
+#left_menu_container {width: 230px; min-height: 650px; margin-top: 10px; padding: 10px; float: left; border: 2px solid #000000; overflow:hidden; background-image: url(../images/design_items/left_menu_bg.jpg); background-repeat:repeat-y; box-shadow: 5px 5px 3px #453B35;}
+#left_white {width: 206px; min-height: 626px; padding: 10px; border: 2px solid #000000; background-color: #FFF;}
+#right_container_with_white {width: 658px; min-height: 650px; float: right; padding: 10px; border: 2px solid #000; margin: 10px 0px 0px 0px; background-image: url(../images/design_items/right_content_bg.jpg); box-shadow: 5px 5px 3px #453B35;}
+#right_white {width: 634px; min-height: 626px; border: 2px solid #000; padding: 10px; background-color: #FFF;}
+
+#title_holder {width: 770px; height: auto; text-align: center; padding: 5px;}
+#left-menu-no-white {width: 150px; height: 550px; float: left; text-align: center; background-color:#C7B199; 
+border: 2px solid #000000; background-image: url(../images/inbox/left_menu_bg.jpg); 
+background-repeat: no-repeat; box-shadow: 5px 5px 3px #453B35; margin-bottom: 10px;}
+#right-with-white {width: 780px; min-height: 540px; float: right; padding-bottom: 10px; border: 2px solid #000000; margin: 0px 0px 10px 0px;
+background-image: url(../images/inbox/message_bg.jpg); background-repeat: repeat; box-shadow: 5px 5px 3px #453B35;}
+#white-area {display: block; overflow: auto; width: 736px; min-height: 456px; border: 2px solid #000; background-color: #FFF; padding: 10px; margin: 0px auto 0px auto;}
+
+INPUT#MailMessageForm_subject {width: 550px; border: 1px solid #000; padding: 2px;}
+INPUT#SearchTermID {position: relative; top: 1px; width: 200px; box-shadow: 0px 2px 4px #000000;}
+
+.forgot-password-prompt {position: relative; display: block; overflow: auto; top: 50px; width: 400px; height: auto; padding: 10px; margin: 120px auto; box-shadow: 0px 0px 10px 5px #453B35; background-color: #FFF; border: 2px solid #000;}
+.forgot-password-prompt label {font-family: main-font; font-size: 14px; text-align:justify; color: #000; text-shadow: none;}
+
+/* GLOGAL */
+
+.hidden {display:none;}
+.pad {padding: 0px 0px 0px 15px;}
+
+.horizontal-divide {width: 80%; height: 0px; margin: 2px auto; border-bottom: 1px solid #000; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius:0px;}
+.horizontal-divide-short {width: 350px; height: 0px; margin: 5px auto; border-bottom: 1px solid #000; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius:0px;}
+.vertical-divide {height: 80%; background-color: #000; width: 1px;}
+.vertical-divide-tall {min-height: 500px; height: auto; float: left; background-color: #000; width: 1px; overflow: auto; display: block;}
+.banner-title-holder {width: auto; height: 90px; margin-right: 10px; float: left;}
+.banner-copy-holder {width: 620px; height: 98px; float: left; padding: 4px 6px 6px 6px; text-align: justify;}
+
+table.under-menu-holder {width: 100%; border-collapse: collapse; margin: 3px 0px;}
+.under-menu-holder td:first-child {width: 250px; vertical-align: middle; padding-top: 2px;}
+.under-menu-holder td {width: 350px; text-align: left; vertical-align: middle;}
+.under-menu-holder td:last-child {text-align: right; vertical-align: middle;}
+
+table.view-all-info {width: 100%; margin-top: 10px;}
+.view-all-info td:first-child {text-align: left; vertical-align: top; width:30%;}
+.view-all-info td:last-child {text-align: left; vertical-align: top; width:70%;}
+.view-all-info-close {clear: both; width: 100%; height: auto; text-align: center;}
+
+
+/* ADMIN PANEL */
+
+.admin-stats-holder {width: 100%; height: auto; display: block; overflow: auto;  border: 2px solid #000; padding: 10px 5px; margin-bottom: 10px;}
+.admin-user-stats {width: 150px; float: left; height: auto; margin: 5px 19px; text-align: center; padding: 0px 0px 5px 0px; border: 1px solid #000;}
+.admin-title-holder {width: 100%; background-color: #000; padding: 5px 0px; text-align: center; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;}
+
+.admin-links-holder {width: 33%; height: auto; display: block; overflow: auto; text-align: center; border: 2px solid #000; padding: 10px 5px; margin-bottom: 10px;}
+
+
+/* SEARCH RESULTS */
+
+.search-result {cursor: pointer; overflow: auto; display: block; width: 610px; height: auto; padding: 5px; margin: 5px; text-align: left;}
+.search-result-image {width: 80px; height: 80px; text-align: center; background-color: #FFF; border: solid 1px #000; float: left; overflow: hidden;}
+.search-result-copy {width: 520px; min-height: 80px; height: auto; float: left; text-align: center; display: block; overflow: auto; word-wrap: break-word;}
+.search-result.no-cursor {cursor: default;}
+#search-result-loading {text-align: center;}
+
+	/* SEARCH RESULT INFO PAGES */
+
+	table.info-page {width: 550px; margin: 0px auto;}
+	.info-page tr td:first-child {width: 110px; text-align: right; vertical-align: top;}
+	.info-page tr td:last-child {width: 350px; text-align: left; vertical-align: top;}
+
+/* TRADER FEED */
+
+.feed-holder {display: block; overflow: auto; width: 680px; height: auto; padding: 10px; margin: 10px auto 0px auto;}
+.feed-image-holder {width: 80px; height: 80px; float: left; background-color: #FFF; border: 2px solid #000;}
+.feed-copy-holder {display: block; overflow: auto; width: 415px; height: auto; float: left; padding: 5px 10px;}
+.feed-buttons-holder {width: 150px; height: 80px; float: left;}
+
+/*HASHTAGS */.hash-main-container {width: 720px; min-height: 500px; height: auto; margin: 10px auto 0px auto; text-align: center; border: 1px solid #000; background-color: #FFF; padding: 20px 10px 10px 7px; overflow: auto; display: block;}
+.hash-holder {overflow: auto; display: block; padding: 5px; width: 100%; height: auto; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius:0px;}.hash-image-holder {width: 60px; height: 60px; border: solid 2px #000; float: left; overflow: hidden;}.hash-copy-holder {display: block; overflow: auto; width: 470px; height: auto; float: left; word-wrap: break-word; text-align: left; padding: 5px;}.hash-button-holder {width: 120px; float: left; margin: 10px;}/* INBOX - CYBER CELLAR */
+
+table.left-menu {width: 100%; position: relative; margin-top: 10px; border-collapse: collapse;}
+.left-menu tr td {overflow: visible; display: block; padding-bottom: 6px; height: 34px;}
+.big-button {height: 52px !important;}
+
+.bottle-display-CC {display: block; overflow: auto; width: 700px; height: auto; padding: 5px; margin: 5px; text-align: left;}
+.bottle-display-CC-image {width: 115px; height: 115px; background-color: #FFF; border: solid 2px #000; float: left; overflow: hidden;}
+.bottle-display-CC-info {display: block; overflow: auto; width: 580px; height: auto; float: left; text-align: center; padding-top: 3px;}
+
+/* PROFILE PAGE */
+
+.user-image-holder {width: 256px; height: 256px; border: 2px solid #000; overflow: hidden;}
+.user-info-holder {width: 100%; min-height: 210px; float:left; text-align: left; word-wrap:break-word; display: block; overflow: auto;}
+.upload-bottle-link {position: relative; width: 130px; height: 0px; float: right; z-index: 499; text-align: left; margin-top: -10px;}
+
+#profile-left-cont {width: 260px; min-height: 700px; display: block; overflow: auto; float: left; padding: 10px; padding-bottom: 20px !important; text-align: center; border: 2px solid #000; box-shadow: 5px 5px 3px #453B35; background-image: url(../images/profile/left_cont_bg.jpg); background-repeat: repeat;}
+#profile-right-cont {width: 632px; min-height: 695px; display: block; overflow: auto; float: right; padding: 10px; text-align: center; border: 2px solid #000; box-shadow: 5px 5px 3px #453B35; background-image: url(../images/profile/cellar_bg.jpg); background-repeat: repeat;}
+.profile-cyber-cellar-holder {width: 99%; height: 650px; overflow-x: hidden; overflow-y: scroll; background-color: #FFF; border: 2px solid #000;}
+
+.profile-button-holder {width: 97%; height: auto; margin: 0px auto 10px auto; text-align: center; z-index: 10;}
+.profile-ISO-button {float: left; height: 34px; width: 250px; text-align: center; z-index: 10;}
+.profile-button-left-side {height: 34px; float: left; z-index: 10;}
+.profile-button-right-side {height: 34px; float: right; z-index: 10;}
+
+.trader-review-container {clear: both; position: relative; top: 10px; height: auto; padding: 10px; text-align: center; border: 2px solid #000;
+box-shadow: 5px 5px 3px #453B35; background-image: url(../images/profile/review_bg.jpg); background-repeat:repeat-y;}
+.profile-review-container {display: block; overflow: auto; height: auto; padding: 10px; background-color: #FFF; margin-bottom: 10px; border: 2px solid #000;}
+.profile-review-image {width: 86px; height: 86px; border: 2px solid #000; float: left;}
+.profile-review-rating {width: 116px; height: 86px; float: left; padding-top: 3px; margin: 10px 0px 0xp 0xp;}
+.profile-review-copy {display: block; overflow: auto; height: auto; min-height: 86px; word-wrap: break-word; width: 670px; float: left; text-align: left;}
+
+.bottle-display {display: block; overflow: auto; width: 98%; height: auto; padding: 5px; margin: 2px 0px; text-align: left;}
+.bottle-display-table {width: 420px; cell-padding: 2px; margin: 0px auto; text-align: left; border: 1px; border-color: #000; word-wrap: break-word;}
+.bottle-display-image {width: 115px; height: 115px; border: solid 2px #000; float: left; overflow: hidden;}
+.bottle-display-info {display: block; overflow: auto; width: 440px; height: auto; float: left; text-align: center; padding-top: 3px; word-wrap: break-word;}
+.boittle-display-buttons {text-align: center; margin: 7px auto 0px auto;}
+
+/* ISO POPUP */
+
+.iso-container {height: 400px; padding: 10px; overflow-x: hidden; overflow-y: scroll; background-color: #FFF;}
+.iso-bottle-holder {width: 100%; margin-bottom: 5px;}
+.iso-bottle-image {width: 80px; height: 80px; border: 1px solid #000; float: left;}
+.iso-bottle-copy {width: 85%; height: auto; min-height: 80px; overflow: auto; word-wrap: word-break; display: block;}
+.iso-empty {width: 100%; text-align: center;}
+
+
+/* FRIEND REQUESTS */
+
+.friend-request-table {width: 740px; cursor: pointer; border-collapse: collapse;}
+.friend-request-table td:first-child {width: 66%;}
+.friend-request-table td:last-child {width: 33%; vertical-align: top;}
+
+/* STORE */
+
+.store-cat-holder {margin: 0px auto 0px auto; margin-top:20px; text-align: center;}
+.store-product-holder {width: 510px; list-style: none; margin: 5px 0px 0px 0px;}
+.store-single-product-holder {width: 250px; height: 320px; display: inline-block;}
+
+/* FIND A TRADER */
+
+.FT-main-holder {clear: both; position: relative; width: 880px; min-height: 510px; display: block; overflow: auto;
+		margin: 0px auto; border: 2px solid #000; z-index: 10; padding: 0px 9px 10px 9px; background-color: #FFF; background-image: url(../images/FT-divide.jpg); background-repeat: repeat-y;}
+.FT-column-holder {width: 31%; height: auto; display: block; overflow: auto; margin-top: 2px; float: left; padding: 3px 10px;}
+.FT-title-holder {width: 100%; min-height: 51px; height: auto; display: block; overflow: auto; text-align: center;}
+.FT-user-holder {width: 40%; float: left; height: auto; text-align: center; display: block; overflow: visible; padding: 5px 0px 0px 0px;}
+.FT-user-image-holder {border: 1px solid #000; width: 60px; height: 60px; border: 1px solid #000; margin: 0px auto;}
+.FT-user-button-holder {width: 50%; float: left; height: auto; display: block; overflow: auto; padding: 5px;}
+.FT-matching-bottles-holder {width: 99%; height: auto; text-align: center; float: left; padding: 2px; margin: 0px 0px 3px 0px;}
+.FT-bottle-holder {position: relative; top: 3px; float: left; width: 100%; height: auto; display: block; overflow: auto; margin: 3px 0px;}
+.FT-bottle-image-holder {width: 20%; float: left; margin-right: 2px;}
+.FT-bottle-image {height: 50px; width: 50px; margin: 0px auto; border: 1px solid #000;}
+.FT-bottle-specs-holder {width: 75%; float: left; min-height: 47px; height: auto; display: block; overflow: auto; padding: 3px 3px 0px 3px; word-wrap: break-word; border: 1px solid #000;}
+
+.FT-hide-bottles-holder {width: 100%; height: auto; margin: 3px 0px; float: left; text-align: center;}
+.FT-hor-divide-holder {width: 100%; text-align: center; float: left; height: 10px; padding-top: 5px; overflow: auto;}
+.FT-loader {width: 100%; float: left; text-align: center;}
+
+/* MAIL - OFFERS LISTS */
+
+.from-subject-date {width: 730px;}
+.from-subject-date td:first-child {width: 135px; text-align: right;}
+.from-subject-date td {width: 470px; text-align: center;}
+.from-subject-date td:last-child {width: 180px; text-align: left;}
+
+.multi-items-table {width: 100%; border-collapse: collapse;}
+.multi-items-table tr:first-child {cursor: pointer; border-collapse: collapse; border-bottom: 0px solid #000;}
+.multi-items-table tr {cursor: pointer; border-collapse: collapse; border-bottom: 1px solid #000;}
+.multi-items-table tr:hover {background-color: #C6AB90; border-collapse: collapse;}
+.multi-items-table tr td:first-child {width: 45px; text-align: left;}
+.multi-items-table tr td {width: 220px; text-align: center;}
+.multi-items-table tr td:last-child {width: 250px; text-align: center; padding-left: 50px;}
+
+
+/* MANAGE FRIENDS */
+
+#FriendListContainer {width: 450px; min-height: 420px; padding: 5px; text-align: center; margin: 0px auto;}
+#manage-friend-holder {width: 200px; height: 60px; background-color: #FFF; padding: 4px; margin: 3px 3px; border: 1px solid #000; float: left;}
+.manage-friend-image {-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; width: 58px; height: 58px; float: left; border: 1px solid #000;}
+.manage-friend-info {width: 140px; height: 60px; float: left; text-align: center;}
+
+
+/* USER INPUTS */
+
+select, input, textarea {height: 20px; font-family: main-font; margin: 0px 0px 2px 0px; padding: 2px; font-size: 12px; border: 1px solid #000;}
+
+table.popup-input-field {width: 350px; margin-top: 10px; align: left; border-collapse: collapse;}
+.popup-input-field input, textarea {width: 210px; height: 20px;}
+.popup-input-field select {width: 216px; height: 26px;}
+.popup-input-field textarea {max-width: 250px; height: 100px; max-height: 300px;}
+.popup-input-field label {font-family: login; font-size: 14pt; list-style: none;}
+.popup-input-field tr td:first-child {vertical-align: top; width: 100px; font-family: login; text-align: right; font-size: 14pt;}
+.popup-input-field tr td:last-child {width: 250px; text-align: left; font-family: main-font; font-size: 13px;}
+.popup-input-field input#BottleForm_isPrivate {width: auto;}
+.popup-input-field input#BottleForm_isSearchable {width: auto;}
+
+table.create-profile {width: 290px; margin: 0px 0px 0px 10px; border-collapse: collapse;}
+.create-profile tr td:first-child {width: 100px; text-align: right; vertical-align: top; font-family: login; font-size: 14pt;}
+.create-profile tr td:last-child {width: 190px;}
+
+
+/* MESSAGING */
+
+#thread-holder {width: 670px; min-height: 50px; padding: 5px; margin: 5px;}
+.thread-image-holder {width: 50px; height: 50px; float: left; text-align: left; border: 1px solid #000; overflow: hidden; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius:5px;}
+.thread-from {width: 600px; height: 45px; float: left; text-align: left; padding-top: 8px; margin-left: 5px;}
+.thread-subject {width: 650px; height: 50px; text-align: left;}
+.thread-message {width: 650px; min-height: 20px; padding: 30px 0px 0px 20px; text-align: left;}
+
+.reply-button-holder {width: 700px; min-height: 40px; text-align: left;}
+.reply-holder {width: 700px; text-align: left;}
+.reply-fields textarea {width: 706px; min-height: 100px;}
+.reply-fields input {width: 500px;}
+
+/* PROPOSE TRADES */
+
+.tp_title {font-family:main-font; font-size: 18px; color: #FFF; font-weight: bold; text-shadow: 2px 2px #453B35;}
+.tp_bottle_title {font-family:main-font; font-size: 12px; color: #000; font-weight: bold;}
+.tp_bottle_info {font-family:main-font; font-size: 10px; color: #000; font-weight: normal;}
+.tp_bottle_add_sub {font-family:main-font; font-size: 16px; color: #000;}
+
+.top-bar {position: relative; top: 10px; width: 940px; height: 58px; margin: 0px 0px 20px 0px; background-image: url(../images/propose_trade/title_bar_bg.jpg); background-repeat: no-repeat; box-shadow: 5px 5px 3px #453B35;}
+.PT-title-holder {float: left; width: 320px; height: 65px; margin: 3px 0px 0px 5px;}
+.PT-copy-holder {float: right; width: 580px; height: 30px;  margin: 8px 0px 0px 20px;}
+.up-for-trade-holder {display: block; overflow: auto; width: 940px; height: auto;}
+.PT-subtitle-holder-L {position: relative; float: left; z-index: 101; width: 465px; height: 45px; padding-top: 12px; text-align: center; background-image: url(../images/propose_trade/trade_bar_bg.jpg); background-repeat: no-repeat; box-shadow: 5px 5px 3px #453B35;}
+.PT-subtitle-holder-R {position: relative; float: right; z-index: 101; width: 465px; height: 45px; padding-top: 12px; text-align: center; background-image: url(../images/propose_trade/trade_bar_bg.jpg); background-repeat: no-repeat; box-shadow: 5px 5px 3px #453B35;}
+.up-for-trade {clear: both; width: 940px; height: 58px;}
+.PT-bottle-background {position: relative; width: 446px; min-height: 180px; padding-top: 25px; z-index: 100; text-align: center; margin: -20px 10px 0px 10px; background-color: #FFF;}
+.PT-bottle-holder {display: block; overflow: auto; max-width: 432px; height: auto; padding: 2px; margin: 3px 3px 0px 3px; text-align: left;}
+.PT-bottle-image-holder {width: 60px; height: 60px; background-color: #FFF; border: solid 1px #000; float: left; overflow: hidden;}
+.PT-bottle-info {display: block; overflow: auto; width: 280px; height: auto; float: left; text-align: left; padding: 0px 0px 0px 3px; word-wrap: break-word;}
+.PT-bottle-buttons {width: 80px; height: 70px; padding: 0px; float:left; text-align: center;}
+
+.PT-message-holder {min-width: 890px; min-height: 150px; margin: 0px auto; padding: 3px 10px;}
+.PT-message-holder textarea {width: 435px; height: 55px; border: 1px solid #000; padding: 3px; max-width: 435px; max-height: 150px;}
+
+/* VIEW SINGLE TRADE */
+
+.VST-review-container {width: 720px; height: 90px; padding: 5px; background-image: url(../images/design_items/review_background.jpg); border: 2px solid #000;}
+.VST-review-user-image {width: 86px; height: 86px; border: 1px solid #000; float: left;}
+.VST-review-rating {width: 120px; height: 86px; float: left; margin: 2px 0px 0px 0px;}
+.VST-review-message {width: 500px; height: 86px; float: right; text-align: justify;}
+
+.VST-left-bottles-holder {overflow: auto; display: block; float: left; width: 360px; height: auto;}
+.VST-right-bottles-holder {overflow: auto; display: block; float: left; width: 360px; height: auto;}
+.VST-image-holder {width: 70px; height: 70px; border: solid 1px #000; float: left; overflow: hidden;}
+.VST-info-holder {overflow: auto; display: block; width: 270px; height: auto; margin-left: 3px; float: left; text-align: left;}
+
+.VST-trade-message {overflow: auto; display: block; height: auto; margin: 0px 0px 10px 0px;}
+.VST-trade-message form textarea {width: 730px; max-width: 730px; min-height: 45px;}
+.VST-post-holder {overflow: auto; display: block; height: auto; width: auto; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius:0px;}
+.VST-post-user-image {width: 60px; height: 60px; border: solid 1px #000; float: left; overflow: hidden;}
+.VST-message-posts {overflow: auto; display: block; width: 680px; height: auto; margin: 0px auto;}
+
+.TD-bottles-up-holder {overflow: auto; display: block; clear: both; width: 730px; height: auto;}
+.TD-your-title {overflow: auto; display: block; width: 350px; height: auto; float: left; text-align: center;}
+.TD-their-title {overflow: auto; display: block; width: 350px; height: auto; float: right; text-align: center;}
+.TD-bottle-holder {width: 340px; height: auto; padding: 5px; text-align: left;}
+.TD-bottle-image-holder {width: 70px; height: 70px; border: 1px solid #000; float: left;}
+.TD-info-holder {width: 255px; height: 90px; float: left; margin: 0px 0px 0px 3px; text-align: left;}
+
+table.trader-review {width: 40%; margin: 0px auto;}
+.trader-review tr td:first-child {vertical-align: top;}
+.trader-review select {width: 206px; height: 26px;}
+.trader-review textarea {min-width: 550px; max-width: 550px; min-height: 200px;}
+
+/* VMT PENDING TRADES / COMPLETED TRADES */
+
+.VMT-holder {overflow: auto; display: block; width: 724px; height: auto; padding: 4px; border: 2px solid #000; margin: 0px auto 10px auto;}
+.VMT-bottle-holder-L {overflow: auto; display: block; width: 350px; height: auto; float: left; text-align: left; margin-top: 7px;}
+.VMT-bottle-holder-R {overflow: auto; display: block; width: 350px; height: auto; float: right; text-align: left; margin-top: 7px;}
+.VMT-bottle-holder {width: 340px; height: 55px; margin: 5px auto}
+.VMT-bottle-image {width: 50px; height: 50px; float: left; border: solid 1px #000; overflow: hidden;}
+.VMT-bottle-info {width: 280px; height: 30px; float: left; text-align: left; padding: 3px;}
+.vertical-divide {width: 1px; height: 100%; background-color: #000; float: left;}
+
+.button a, a.button {font-family: button_font; font-size: 18px; text-align:center; color:#D2B998; text-decoration:none;}
+.button a, a.button {font-family: button_font; font-size: 18px; text-align:center; color: #FFF; text-decoration:none;}
+.button:hover a:hover, a.button:hover {font-family: button_font; font-size:18px; text-align:center; color:#F6FF81; text-decoration:none;}
+
+
+#menu ul {position: relative; width: 900px; height: 45px; list-style: none; margin: 0px auto;}
+#menu ul li {float: left; position: relative; height: 36px; top: 10px; padding: 0px 21px;}
+
+.user-menu {position: relative; display: none;}
+.user-menu-header {position: relative; width: 140px; height: 34px;}
+.user-menu-header:hover .user-menu {
+	position: relative;
+	display: block;
+	width: 230px;
+	height: 330px;
+	top: 0px;
+	z-index: 999;
+	right: 71px;
+	}
+	
+.user-menu-holder {
+	border: 1px solid #000;
+	position: relative;
+	overflow: auto;
+	display: block;
+	margin: 13px auto;
+	width: 200px;
+	height: auto;
+	padding-bottom: 10px;
+	z-index: 999;
+	background-color: #CCB9A2;
+	text-align: left;
+	box-shadow: 2px 2px 8px #514239;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	-moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}
+
+.user-menu-header a {
+	font-family: button_font; 
+	font-size: 18px; 
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;}
+.user-menu-header a:hover {color: #F6FF81;}
+
+.user-menu ul {list-style: none; width: 190px !important; height: auto; padding: 0px !important; margin: 0px !important;}
+.user-menu li {height: 20px !important; width: 180px; text-align: left; margin: 0px !important; padding: 2px 10px !important;}
+.user-menu a {font-family: button_font; font-size: 14px; color: #000000; text-decoration: none; text-align: left;}
+.user-menu a:hover {color: #F6FF81;}
+
+img.thumb {width : 100px;height : 100px;}
+.pointer {cursor: pointer;}
+
+button {
+	cursor: pointer;
+	font-family: main-font;
+}
+
+button, input[type=button], input[type=submit] {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	white-space: normal;}
+
+button:disabled, input[type=button]:disabled, input[type=submit]:disabled {
+  	box-shadow: 0px 0px 0px #000000 !important;
+  	opacity: 0.7;
+	cursor: default !important;}
+button:disabled:hover, input[type=button]:disabled:hover, input[type=submit]:disabled:hover {
+  	color: none;}
+
+button.mini-box, input[type=button].mini, input[type=submit].mini {
+	font-size: 12px;
+	min-width: 60px; 
+	height: 20px;
+	border: 1px solid #000;
+	padding: 1px 3px;
+	margin: 1px;
+	background-color: #FFFFFF !important;
+	box-shadow: 0px 1px 3px #000000;}
+button.mini-box:hover, input[type=button].mini:hover, input[type=submit].mini:hover {
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+
+button.box, input[type=button].mini, input[type=submit].mini {
+	font-size: 12px;
+	min-width: 60px; 
+	height: 60px;
+	border: 1px solid #000;
+	padding: 1px 3px;
+	margin: 1px;
+	background-color: #FFFFFF !important;
+	box-shadow: 0px 1px 3px #000000;}
+button.box:hover, input[type=button].mini:hover, input[type=submit].mini:hover {
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+
+button.mini, input[type=button].mini, input[type=submit].mini {
+	font-size: 10px;
+	min-width: 100px; 
+	height: auto;
+	border: 1px solid #000;
+	padding: 1px 3px;
+	margin: 1px;
+	background-color: #FFFFFF !important;
+	box-shadow: 0px 1px 3px #000000;}
+button.mini:hover, input[type=button].mini:hover, input[type=submit].mini:hover {
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+
+button.small, input[type=button].small, input[type=submit].small {
+	font-size: 10px;
+	min-width: 90px; 
+	height: auto;
+	border: 1px solid #000;
+	padding: 2px 5px;
+	margin: 1px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 4px #000000;}
+button.small:hover, input[type=button].small:hover, input[type=submit].small:hover {
+	background-color: #9A8C81;
+	box-shadow: 0px 0px 0px #000000;}
+	
+button.medium, input[type=button].medium, input[type=submit].medium {
+	position: relative;
+	z-index: 10;
+	font-size: 12px;
+	vertical-align: middle;
+	width: 120px; 
+	height: auto;
+	border: 1px solid #000;
+	padding: 5px 4px;
+	background-color: #FFFFFF !important;
+	box-shadow: 0px 2px 4px #000000;}
+button.medium:hover, input[type=button].medium:hover, input[type=submit].medium:hover {
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+	
+button.large, input[type=button].large, input[type=submit].large {
+	font-size: 13px;
+	min-width: 210px; 
+	height: 40px;
+	border: 1px solid #000;
+	padding: 5px;
+	margin: 3px;
+	background-color: #FFFFFF !important;
+    box-shadow: 0px 3px 5px #000000;}
+button.large:hover, input[type=button].large:hover, input[type=submit].large:hover {
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+
+button.disabled, input[type=button].disabled {
+	cursor: default;
+	background-color: #9A8C81 !important;
+	box-shadow: 0px 0px 0px #000000;}
+
+button.upload-bottle-banner, input[type=button].upload_bottle_banner, input[type=submit].edit_bottle {
+	position: relative:
+	z-index: 800;
+	width: 106px; 
+	height: 116px;
+	background-image: url(../images/profile/upload_bottle.png);}
+button.upload-bottle-banner:hover, input[type=button].upload_bottle_banner:hover, input[type=submit].upload_bottle_banner:hover {
+	background-image: url(../images/profile/upload_bottle_over.png);}
+
+
+a.hashtag {
+	color:blue;
+}
+
+tr.message-unread {
+	font-weight: bold;
+}
+
+tr.offer-unread {
+	font-weight: bold;
+}
+
+.top-banner {
+	position: relative; 
+	width: 938px; 
+	height: 90px;
+	top: 10px;
+	padding: 5px;
+	z-index: 100;
+	border: 2px solid #000;
+	background-image: url(../images/trader_feed/title_bar_bg.jpg); 
+	background-repeat: no-repeat; 
+	box-shadow: 5px 5px 3px #453B35;
+}
+
+.top-banner-title {width: auto; height: 90px; margin-right: 10px; float: left;}
+.top-banner-copy {width: 620px; height: 98px; float: left; padding: 4px 6px 6px 6px; text-align: justify;}
+
+.single-page-content {
+	position: relative;
+	clear: both;
+	display: block;
+	overflow: auto; 
+	width: 790px;
+	min-height: 510px;
+	text-align: left;
+	z-index: 10; 
+	margin: 0px auto 0px auto; 
+	padding: 20px 60px 10px 60px; 
+	background-color: #FFF;
+}
+
+.trade-feed-shortcut-list {
+	width: 700px; 
+	height: 33px; 
+	text-align: center; 
+	padding-bottom: 5px;
+	margin: 5px auto 5px auto;
+	border-bottom: 1px solid #000;
+}
+
+#tab-holder {
+	margin-left:10px;
+}
+
+#blogiframe {
+	margin-top:20px;
+}
+
+ul.ui-autocomplete, select, option, optgroup {
+	cursor:pointer;
+}
+
+.rotating-banner {
+	position: relative; 
+	width: 927px; 
+	height: 451px; 
+	margin: 0px 0px 5px 0px; 
+	overflow: hidden; 
+	z-index: 10; 
+	box-shadow: 5px 5px 3px #453B35;
+}
+
+img.loading.small {
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+img.loading.medium {
+	vertical-align: middle;
+	width: 35px;
+	height: 35px;
+}
+
+.event-container {
+	display: none;
+}

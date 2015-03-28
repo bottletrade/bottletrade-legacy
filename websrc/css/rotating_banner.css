@@ -1,0 +1,264 @@
+#slider {
+position: relative; 
+margin-bottom:10px;
+background-color:#EAECEE;
+overflow:visible;
+position:relative;
+width:943px; 
+height:452px;
+float:left;
+z-index: 10;}
+
+#mask {
+position: relative; 
+overflow:hidden;
+width:943px;
+height:452px;
+z-index: 10;}
+
+#slider ul {
+margin: 0px;
+padding: 0px;
+position: relative;}
+
+#slider li {
+width: 943px;  /* Width Image */
+height: 452px; /* Height Image */
+position: absolute; /* Original Position - Outside of the Slider */
+list-style: none;}
+
+#slider li.firstanimation {
+width:943px; 
+height:452px;
+animation: cycle 50s ease-out infinite;
+-moz-animation:cycle 50s ease-out infinite;
+-webkit-animation:cycle 50s ease-out infinite;
+-o-animation:cycle 50s ease-out infinite;}
+
+#slider li.secondanimation {
+width:943px; 
+height:452px;
+animation: cycletwo 50s ease-out infinite;
+-moz-animation:cycletwo 50s ease-out infinite;
+-webkit-animation:cycletwo 50s ease-out infinite;
+-o-animation:cycletwo 50s ease-out infinite;}
+
+#slider li.thirdanimation {
+width:943px; 
+height:452px;
+animation: cyclethree 50s ease-out infinite;
+-moz-animation:cyclethree 50s ease-out infinite;
+-webkit-animation:cyclethree 50s ease-out infinite;
+-o-animation:cyclethree 50s ease-out infinite;}
+
+#slider li.fourthanimation {
+width:943px; 
+height:452px;
+animation: cyclefour 50s ease-out infinite;
+-moz-animation:cyclefour 50s ease-out infinite;
+-webkit-animation:cyclefour 50s ease-out infinite;
+-o-animation:cyclefour 50s ease-out infinite;}
+
+#slider li.fifthanimation {
+width:943px; 
+height:452px;
+animation: cyclefive 50s ease-out infinite;
+-moz-animation:cyclefive 50s ease-out infinite;
+-webkit-animation:cyclefive 50s ease-out infinite;
+-o-animation:cyclefive 50s ease-out infinite;}
+
+
+@keyframes cycle
+{
+0% {right:0px; opacity:1;}
+16% {right:0px; opacity:1;}
+20% {right:943px; opacity:0;}
+96% {right:-943px; opacity:0;}
+100% {right:0px; opacity:1;}
+}
+
+@-moz-keyframes cycle /* Firefox */
+{
+0% {right:0px; opacity:1;}
+16% {right:0px; opacity:1;}
+20% {right:943px; opacity:0;}
+96% {right:-943px; opacity:0;}
+100% {right:0px; opacity:1;}
+}
+
+@-webkit-keyframes cycle /* Safari and Chrome */
+{
+0% {right:0px; opacity:1;}
+16% {right:0px; opacity:1;}
+20% {right:943px; opacity:0;}
+96% {right:-943px; opacity:0;}
+100% {right:0px; opacity:1;}
+}
+
+@-o-keyframes cycle /* Opera */
+{
+0% {right:0px; opacity:1;}
+16% {right:0px; opacity:1;}
+20% {right:943px; opacity:0;}
+96% {right:-943px; opacity:0;}
+100% {right:0px; opacity:1;}
+}
+
+@keyframes cycletwo
+{
+0% {right:-943px; opacity:0;}
+16% {right:-943px; opacity:0;}
+20% {right:0px; opacity:1;}
+36% {right:0px; opacity:1;}
+40% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-moz-keyframes cycletwo /* Firefox */
+{
+0% {right:-943px; opacity:0;}
+16% {right:-943px; opacity:0;}
+20% {right:0px; opacity:1;}
+36% {right:0px; opacity:1;}
+40% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-webkit-keyframes cycletwo /* Safari and Chrome */
+{
+0% {right:-943px; opacity:0;}
+16% {right:-943px; opacity:0;}
+20% {right:0px; opacity:1;}
+36% {right:0px; opacity:1;}
+40% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-o-keyframes cycletwo /* Opera */
+{
+0% {right:-943px; opacity:0;}
+16% {right:-943px; opacity:0;}
+20% {right:0px; opacity:1;}
+36% {right:0px; opacity:1;}
+40% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+
+@keyframes cyclethree
+{
+0% {right:-943px; opacity:0;}
+36% {right:-943px; opacity:0;}
+40% {right:0px; opacity:1;}
+56% {right:0px; opacity:1;}
+60% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-moz-keyframes cyclethree /* Firefox */
+{
+0% {right:-943px; opacity:0;}
+36% {right:-943px; opacity:0;}
+40% {right:0px; opacity:1;}
+56% {right:0px; opacity:1;}
+60% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-webkit-keyframes cyclethree /* Safari and Chrome */
+{
+0% {right:-943px; opacity:0;}
+36% {right:-943px; opacity:0;}
+40% {right:0px; opacity:1;}
+56% {right:0px; opacity:1;}
+60% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-o-keyframes cyclethree /* Opera */
+{
+0% {right:-943px; opacity:0;}
+36% {right:-943px; opacity:0;}
+40% {right:0px; opacity:1;}
+56% {right:0px; opacity:1;}
+60% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+
+@keyframes cyclefour
+{
+0% {right:-943px; opacity:0;}
+56% {right:-943px; opacity:0;}
+60% {right:0px; opacity:1;}
+76% {right:0px; opacity:1;}
+80% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-moz-keyframes cyclefour /* Firefox */
+{
+0% {right:-943px; opacity:0;}
+56% {right:-943px; opacity:0;}
+60% {right:0px; opacity:1;}
+76% {right:0px; opacity:1;}
+80% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-webkit-keyframes cyclefour /* Safari and Chrome */
+{
+0% {right:-943px; opacity:0;}
+56% {right:-943px; opacity:0;}
+60% {right:0px; opacity:1;}
+76% {right:0px; opacity:1;}
+80% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+@-o-keyframes cyclefour /* Opera */
+{
+0% {right:-943px; opacity:0;}
+56% {right:-943px; opacity:0;}
+60% {right:0px; opacity:1;}
+76% {right:0px; opacity:1;}
+80% {right:943px; opacity:0;}
+100% {right:-943px; opacity:0;}
+}
+
+
+@keyframes cyclefive
+{
+0% {right:-943px; opacity:0;}
+76% {right:-943px; opacity:0;}
+80% {right:0px; opacity:1;}
+96% {right:0px; opacity:1;}
+100% {right:943px; opacity:0;}
+}
+
+@-moz-keyframes cyclefive /* Firefox */
+{
+0% {right:-943px; opacity:0;}
+76% {right:-943px; opacity:0;}
+80% {right:0px; opacity:1;}
+96% {right:0px; opacity:1;}
+100% {right:943px; opacity:0;}
+}
+
+@-webkit-keyframes cyclefive /* Safari and Chrome */
+{
+0% {right:-943px; opacity:0;}
+76% {right:-943px; opacity:0;}
+80% {right:0px; opacity:1;}
+96% {right:0px; opacity:1;}
+100% {right:943px; opacity:0;}
+}
+
+@-o-keyframes cyclefive /* Opera */
+{
+0% {right:-943px; opacity:0;}
+76% {right:-943px; opacity:0;}
+80% {right:0px; opacity:1;}
+96% {right:0px; opacity:1;}
+100% {right:943px; opacity:0;}
+}
