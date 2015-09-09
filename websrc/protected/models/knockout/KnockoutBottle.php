@@ -5,17 +5,17 @@
         	self::generateEmptyData();
         	return self::$data;
         }
-        
+
         public static function MakeDataWithForm($form) {
         	self::generateDataWithForm($form);
         	return self::$data;
         }
-        
+
         public static function MakeFeedDataWithBottle($bottle) {
         	self::generateFeedDataWithBottle($bottle);
         	return self::$data;
         }
-        
+
         public static function MakeDataWithBottle($bottle) {
         	self::generateDataWithBottle($bottle);
         	return self::$data;
@@ -33,7 +33,7 @@
         	self::$data["companyType"] = CompanyType::BREWERY;
         	self::$data["imgSrc"] = ImageUtils::getDefaultBottleImageUrl();
         }
-        
+
         private static function generateDataWithForm($form) {
         	self::generateEmptyData();
         	self::$data["imageName"] = $form->imagename;
@@ -57,17 +57,17 @@
         	self::$data["isPrivate"] = $form->isPrivate == 1 ? true : false;
         	return self::$data;
         }
-        
+
         private static function generateFeedDataWithBottle($bottle) {
         	self::generateDataWithBottle($bottle);
         	self::$data["time"] = $bottle->CreatedTime;
         	self::$data["hashtags"] = HashTag::convertHashTagsToLinks(implode(" ", HashTag::stripOutHashTags($bottle->Description)));
         }
-        
+
         private static function generateDataWithBottle($bottle)
         {
         	self::generateEmptyData();
-        	self::$data["username"] = $bottle->user->Username;
+        	self::$data["username"] = $bottle->user == null ? "" : $bottle->user->Username;
         	self::$data["beverageType"] = Bottle::getBeverageType($bottle);
         	self::$data["imgSrc"] = ImageManager::getImageUrlStatic($bottle);
         	self::$data["bottleId"] = $bottle->ID;
@@ -125,6 +125,6 @@
         	self::$data["username"] = $event->user->Username;
         	self::$data["time"] = $event->EventTime;
         	self::$data["hashtags"] = HashTag::convertHashTagsToLinks(implode(" ", HashTag::stripOutHashTags($event->Description)));
-        
+
         }
     }
