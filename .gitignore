@@ -1,3 +1,5 @@
 
 websrc/assets
-websrc/protected
+websrc/protected/config
+websrc/protected/data
+websrc/protected/runtime
